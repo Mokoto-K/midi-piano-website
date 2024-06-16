@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>La Pianii</title>
+</head>
+<body>
+    <div class="container">
+    <div class="piano">
+
+     <input type="button" class="white-key" id="c" onclick="playC();">
+     <input type="button" class="black-key" id="c#" onclick="playCSharpe();">
+     <input type="button" class="white-key" id="d" onclick="playD();">
+     <input type="button" class="black-key" id="d#" onclick="playDSharpe();">
+     <input type="button" class="white-key" id="e" onclick="playE();">
+     <input type="button" class="white-key" id="f" onclick="playF();">
+     <input type="button" class="black-key" id="f#" onclick="playFSharpe();">
+     <input type="button" class="white-key" id="g" onclick="playG();">
+     <input type="button" class="black-key" id="g#" onclick="playGSharpe();">
+     <input type="button" class="white-key" id="a" onclick="playA();">
+     <input type="button" class="black-key" id="a#" onclick="playASharpe();">
+     <input type="button" class="white-key" id="b" onclick="playB();">
+
+    </div>
+    </div>
+
+    <audio id="cnote" type="audio" src="sounds/C4.mp3"></audio>
+    <audio id="c#note" type="audio" src="sounds/Db4.mp3"></audio>
+    <audio id="dnote" type="audio" src="sounds/D4.mp3"></audio>
+    <audio id="d#note" type="audio" src="sounds/Eb4.mp3"></audio>
+    <audio id="enote" type="audio" src="sounds/E4.mp3"></audio>
+    <audio id="fnote" type="audio" src="sounds/F4.mp3"></audio>
+    <audio id="f#note" type="audio" src="sounds/Gb4.mp3"></audio>
+    <audio id="gnote" type="audio" src="sounds/G4.mp3"></audio>
+    <audio id="g#note" type="audio" src="sounds/Ab4.mp3"></audio>
+    <audio id="anote" type="audio" src="sounds/A4.mp3"></audio>
+    <audio id="a#note" type="audio" src="sounds/Bb4.mp3"></audio>
+    <audio id="bnote" type="audio" src="sounds/B4.mp3"></audio>
+
+
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>

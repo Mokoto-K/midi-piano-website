@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    justify-items: center;
+}
+
+.piano {
+    background-color: rgb(255, 255, 255);
+    display: inline-grid;
+    grid-template-columns: 100px 50px 100px 50px 100px 100px 50px 100px 50px 100px 50px 100px;
+    /* justify-items: center; */
+}
+
+.white-key {
+    width: 100px;
+    height: 500px;
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+.black-key {
+    width: 100px;
+    height: 350px;
+    background-color: black;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
