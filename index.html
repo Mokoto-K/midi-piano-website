@@ -8,25 +8,26 @@
 </head>
 <body>
     <div class="container">
-    <div class="piano">
+        <div class="naturals">
+            <input type="button" class="white-key" id="c" onclick="playNote('cnote');">
+            <input type="button" class="white-key" id="d" onclick="playNote('dnote');">
+            <input type="button" class="white-key" id="e" onclick="playNote('enote');">
+            <input type="button" class="white-key" id="f" onclick="playNote('fnote');">
+            <input type="button" class="white-key" id="g" onclick="playNote('gnote');">
+            <input type="button" class="white-key" id="a" onclick="playNote('anote');">
+            <input type="button" class="white-key" id="b" onclick="playNote('bnote');">
+        </div>
 
-     <input type="button" class="white-key" id="c" onclick="playC();">
-     <input type="button" class="black-key" id="c#" onclick="playCSharpe();">
-     <input type="button" class="white-key" id="d" onclick="playD();">
-     <input type="button" class="black-key" id="d#" onclick="playDSharpe();">
-     <input type="button" class="white-key" id="e" onclick="playE();">
-     <input type="button" class="white-key" id="f" onclick="playF();">
-     <input type="button" class="black-key" id="f#" onclick="playFSharpe();">
-     <input type="button" class="white-key" id="g" onclick="playG();">
-     <input type="button" class="black-key" id="g#" onclick="playGSharpe();">
-     <input type="button" class="white-key" id="a" onclick="playA();">
-     <input type="button" class="black-key" id="a#" onclick="playASharpe();">
-     <input type="button" class="white-key" id="b" onclick="playB();">
-
+        <div class="accidentals">
+            <input type="button" class="black-key" id="csharpe" onclick="playNote('c#note');">
+            <input type="button" class="black-key" id="dsharpe" onclick="playNote('d#note');">
+            <input type="button" class="black-key" id="fsharpe" onclick="playNote('f#note');">
+            <input type="button" class="black-key" id="gsharpe" onclick="playNote('g#note');">
+            <input type="button" class="black-key" id="asharpe" onclick="playNote('a#note');">
+        </div>
     </div>
-    </div>
 
-    <audio id="cnote" type="audio" src="sounds/C4.mp3"></audio>
+    <audio class='audio' id="cnote" type="audio" src="sounds/C4.mp3"></audio>
     <audio id="c#note" type="audio" src="sounds/Db4.mp3"></audio>
     <audio id="dnote" type="audio" src="sounds/D4.mp3"></audio>
     <audio id="d#note" type="audio" src="sounds/Eb4.mp3"></audio>
@@ -38,7 +39,6 @@
     <audio id="anote" type="audio" src="sounds/A4.mp3"></audio>
     <audio id="a#note" type="audio" src="sounds/Bb4.mp3"></audio>
     <audio id="bnote" type="audio" src="sounds/B4.mp3"></audio>
-
 
     <script src="index.js" charset="UTF-8"></script>
 </body>

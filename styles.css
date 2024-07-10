@@ -1,13 +1,28 @@
-.container{
+body {
     display: grid;
     justify-items: center;
 }
 
-.piano {
-    background-color: rgb(255, 255, 255);
-    display: inline-grid;
-    grid-template-columns: 100px 50px 100px 50px 100px 100px 50px 100px 50px 100px 50px 100px;
-    /* justify-items: center; */
+
+.container{
+    background-color: saddlebrown;
+    display: grid;
+    justify-items: center;
+    height: 550px;
+    width: 1000px;
+}
+
+.naturals {
+    background-color: saddlebrown;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+    margin:20px;
+}
+
+.accidentals {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(14, 50px);
 }
 
 .white-key {
@@ -19,10 +34,32 @@
 }
 
 .black-key {
-    width: 100px;
+    width: 50px;
     height: 350px;
     background-color: black;
     border: black solid 1px;
     border-radius: 5px;
+    position: relative;
+    top: -521px
+    
 }
 
+#csharpe {
+    grid-column: 2 / span 2;
+}
+
+#dsharpe {
+    grid-column: 4 / span 2;
+}
+
+#fsharpe {
+    grid-column: 8 / span 2;
+}
+
+#gsharpe {
+    grid-column: 10 / span 2;
+}
+
+#asharpe {
+    grid-column: 12 / span 2;
+}
